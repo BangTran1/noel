@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thị Trấn Giáng Sinh | Christmas Town</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Nunito:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="canvas-container">
+        <div class="loading glass-panel" id="loading">
+            <div class="loading-spinner"></div>
+            <h2>Đang chuẩn bị quà... 🎁</h2>
+            <p>Vui lòng chờ trong giây lát</p>
+        </div>
+
+        <div class="controls glass-panel">
+            <p>🌟 Chúc bạn một mùa Giáng Sinh an lành! 🌟</p>
+            <button id="audio-btn" class="audio-btn" title="Bật/Tắt nhạc">🔇</button>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Jingle_Bells_-_Kevin_MacLeod_-_No_Copyright_Music_-_Christmas_Background_Music.mp3"
+            type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="main.js?v=29"></script>
+</body>
+
+</html>
